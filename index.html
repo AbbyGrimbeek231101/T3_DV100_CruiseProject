@@ -1,170 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-   
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Go with the Flow</title>
+    <!-- Style sheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Source+Sans+3:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
-<!--internal document-->
-<link rel="stylesheet" href="css/main.css">
-
-<!-- Optional JavaScript -->
-    <!-- jQuery first, then Proper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <title>Go with the Flow Cruises </title>
-</head>
-<!--font-family: 'Quicksand', sans-serif;
-font-family: 'Source Sans 3', sans-serif;-->
-
-<body>
-   <!--navigation area--> 
-    <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Go with the Flow</a>
-          <a class="navbar-brand" href="index.html"><img src="assests/smallerlogo.png" alt="Logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Vacation Cruises</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    More
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="/pages/trips.html">Trips</a></li>
-                    <li><a class="dropdown-item" href="/pages/checkout.html">Checkout</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Contact</a></li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex mt-3" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </nav>
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
     
-      <!--Carousel-->
-      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+
+    <!-- nav ------------------------>
+    <nav class="navbar fixed-top pt-0" style="background-color: #ffffff; height: 80px;">
+      <div class="container">
+
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+          <img src="assests/smallerlogo.png" alt="Logo" height="70">
+        </a>
+
+        <!-- nav items -->
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="trips.html">Trips</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="checkout.html">Checkout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end nav ------------------------>
+
+
+    <!-- carousel ----------------------------------------------------------------------------->
+    <div id="carouselExampleIndicators" class="carousel slide" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner ">
+            <!-- slide 1 -->
+          <div class="carousel-item full-height active">
+            <img src="assests/slider/cruise1.jpg" class="d-block w-100" alt="...">
+
             <div class="container">
-              <div class="row full-height">
-                <div class="col align-self-center">
-                  <h1>Welcome to Go with the Flow</h1>
+                <div class="text-holder">
+                    <div class="row">
+                        <h2>Explore the Pinnacle of Luxury Cruise Experiences with Go with the Flow</h2>
+                        <h1>Go with the Flow</h1>
+                       <p>Embark on an exceptional cruise experience with Go with the Flow, where elegance and opulence combine with the serene beauty of the open sea. Get ready to immerse yourself in a world of refined luxury, expertly curated to exceed your every expectation, as you set sail on our carefully chosen fleet of magnificent cruise ships.</p>
+                    </div>
+                    <button class="button mt-2">Begin </button>
                 </div>
-              </div>
+                
+            </div>          
+          </div>
+
+          <!-- slide 2 -->
+          <div class="carousel-item full-height">
+            <img src="assests/slider/cruise14.jpg" class="d-block w-100" alt="...">
+            <div class="container">
+                <div class="text-holder">
+                    <div class="row">
+                        <h2>Relax in Lavish Luxury</h2>
+                        <h1>Elegant Suites</h1>
+                       <p>Indulge in unparalleled comfort and refinement as you luxuriate in the opulent interiors of our thoughtfully designed cabins and suites. Each element has been carefully selected to craft a sanctuary of serenity, guaranteeing a peaceful escape throughout your journey.</p>
+                    </div>
+                    <button class="button mt-2">Explore</button>
+                </div>
+                
             </div>
-            <img src="assests/slider/cruise1.jpg" height="650px" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item">
-            <img src="assests/slider/cruise2.jpg" height="650px" class="d-block w-100" alt="...">
+
+          <!-- slide 3 -->
+          <div class="carousel-item full-height">
+            <img src="assests/slider/cruise11.jpg" class="d-block w-100" alt="...">
+            <div class="container">
+                <div class="text-holder">
+                    <div class="row">
+                        <h2>Memorable Adventures</h2>
+                        <h1>Unique Pursuits</h1>
+                        <p>Engage in a world of luxury and adventure with our thoughtfully curated assortment of unique activities. From exploring crystalline waters while snorkeling to embarking on exclusive private island excursions, every experience is tailor-made to enhance your journey and craft unforgettable memories that will stand the test of time.</p>
+                    </div>
+                    <button class="button mt-2">Find More</button>
+                </div>
+                
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="assests/slider/cruise3.jpg" height="650px" class="d-block w-100" alt="...">
+
+        </div>
+
+        <!-- carousel buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="46" viewBox="0 0 26 46" fill="none">
+                <path d="M4 26H7V20H4L4 26ZM0.87868 20.8787C-0.292893 22.0503 -0.292893 23.9497 0.87868 25.1213L19.9706 44.2132C21.1421 45.3848 23.0416 45.3848 24.2132 44.2132C25.3848 43.0416 25.3848 41.1421 24.2132 39.9706L7.24264 23L24.2132 6.02944C25.3848 4.85786 25.3848 2.95837 24.2132 1.7868C23.0416 0.615223 21.1421 0.615223 19.9706 1.7868L0.87868 20.8787ZM4 20H3L3 26H4L4 20Z" fill="white" fill-opacity="0.95"/>
+            </svg>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="46" viewBox="0 0 26 46" fill="none">
+                <path d="M22 20H19V26H22V20ZM25.1213 25.1213C26.2929 23.9497 26.2929 22.0503 25.1213 20.8787L6.02944 1.7868C4.85786 0.615223 2.95837 0.615223 1.7868 1.7868C0.615223 2.95837 0.615223 4.85786 1.7868 6.02944L18.7574 23L1.7868 39.9706C0.615223 41.1421 0.615223 43.0416 1.7868 44.2132C2.95837 45.3848 4.85786 45.3848 6.02944 44.2132L25.1213 25.1213ZM22 26H23V20H22V26Z" fill="white" fill-opacity="0.95"/>
+              </svg>
+        </button>
+        <!-- end carousel buttons -->
+
+      </div>
+    <!-- end carousel ----------------------------------------------------------------------------->
+
+    
+    <!-- About us -->
+    <div class="about-us">
+      
+      <div class="about-us-overlay">
+        <div class="container">
+          <div class="row">
+            <h2>About us</h2>
+           <p>At Go with the Flow, we create experiences that go beyond the ordinary, immersing you in a realm of unmatched luxury cruises. To us, the sea is not just water; it's a canvas for indelible memories, a stage for exceptional moments, and a portal to peerless sophistication.</p>
           </div>
         </div>
-        <!-- <h1>Fo with the Flow</h1> -->
-        
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
 
-      <h1>What's the Weather like?</h1>
-          <section class=”weather”>
-            <div class=”container”>
-              <div class=”forecast”>
-                // here we populate the 7 days forecast
-              </div>
-            </div>
-          </section>
-      <br/>
       
-      <div class="row">
-        <div class="col-4">
-          <div class="card" style="width: 20rem;" >
-              <img src="../assests/slider/cruise7.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-              <h5 class="card-title">Marvelous trip </h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="/pages/checkout.html" class="btn btn-primary">Book Now</a>
-              </div>
-          </div>
-        </div>
+      
+      
 
-        <div class="col-4">
-            <div class="card" style="width: 20rem;" >
-                <img src="../assests/slider/cruise8.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Marvelous trip </h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="/pages/checkout.html" class="btn btn-primary">Book Now</a>
-                </div>
-            </div>
-        </div>
 
-        <div class="col-4">
-            <div class="card" style="width: 20rem;" >
-                <img src="../assests/slider/cruise9.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h5 class="card-title">Marvelous trip </h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="/pages/checkout.html" class="btn btn-primary">Book Now</a>
-                </div>
-            </div>
-        </div>
     </div>
-
-    <div class="row">
+<br>
+    <!--Best selling trips-->
+    <header>
+      <h3>Best Selling trips</h3>
+  </header>
+  <div class="row">
       <div class="col-4">
         <div class="card" style="width: 20rem;" >
-            <img src="../assests/slider/cruise10.jpg" class="card-img-top" alt="...">
+            <img src="../assests/slider/cruise4.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-            <h5 class="card-title">Marvelous trip </h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">New England Fall Foliage Cruise </h5>
+            <p class="card-text">Destination: New England and Eastern Canada - Boston, Portland, Halifax, etc</p>
+            <p class="card-text">R 27,000 per person</p>
             <a href="/pages/checkout.html" class="btn btn-primary">Book Now</a>
             </div>
         </div>
       </div>
 
-
       <div class="col-4">
           <div class="card" style="width: 20rem;" >
-              <img src="../assests/slider/cruise11.jpg" class="card-img-top" alt="...">
+              <img src="../assests/slider/cruise5.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-              <h5 class="card-title">Marvelous trip </h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">Australian Coastal Serenity </h5>
+              <p class="card-text">Destination: Australian Coastline - Sydney, Melbourne, Great Barrier Reef, etc.</p>
+              <p class="card-text">R 37,500 per person</p>
               <a href="/pages/checkout.html" class="btn btn-primary">Book Now</a>
               </div>
           </div>
@@ -172,19 +167,21 @@ font-family: 'Source Sans 3', sans-serif;-->
 
       <div class="col-4">
           <div class="card" style="width: 20rem;" >
-              <img src="../assests/slider/cruise12.jpg" class="card-img-top" alt="...">
+              <img src="../assests/slider/cruise6.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-              <h5 class="card-title">Marvelous trip </h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">Transatlantic Crossing Elegance </h5>
+              <p class="card-text">Destination: Transatlantic Voyage - New York to Southampton</p>
+              <p class="card-text">R 33,000 per person</p>
               <a href="/pages/checkout.html" class="btn btn-primary">Book Now</a>
               </div>
           </div>
       </div>
   </div>
-      
-      
-      
-      <h1>Did you Know</h1>
+
+  <!-- End of best selling-->
+
+<!--Accordian thing -->
+  <h1>Did you Know</h1>
       <div class="accordion" id="accordionPanelsStayOpen">
   <div class="accordion-item">
     <h2 class="accordion-header">
@@ -195,7 +192,7 @@ font-family: 'Source Sans 3', sans-serif;-->
     <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
       <div class="accordion-body">
         <strong></strong> 
-        <img src="assests/map.jpg" height="450px" class="d-block w-100" alt="...">
+        <img src="assests/map2.jpg" height="450px" class="d-block w-100" alt="...">
       </div>
     </div>
   </div>
@@ -207,7 +204,15 @@ font-family: 'Source Sans 3', sans-serif;-->
     </h2>
     <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
       <div class="accordion-body">
-        <strong>About us: </strong>Go with the FLow Cruises is a vacation cruise liner that travels the Atlantic Ocean on a once in a life time trip.  
+        <strong>What amenities can I expect on board?</strong> Our Cruises are equipped with a range of amenities to ensure your comfort and enjoyment. You can look forward to features like spacious lounges, a well-stocked bar, a fitness center, a spa, and even a swimming pool on some of our larger vessels. Additionally, we offer a selection of water sports equipment for your leisure, such as kayaks, paddleboards, and snorkeling gear.
+        <br>
+        <strong>How do you handle medical emergencies while at sea?</strong> We have trained medical staff on board each yacht and are equipped with a medical center to handle minor medical issues. In the case of a serious medical emergency, we maintain communication with nearby coastal authorities and can arrange for a medical evacuation if necessary.
+        <br>
+        <strong>Can I plan special surprises or celebrations on board?</strong> Absolutely! We love helping guests create unforgettable moments. Whether it's arranging a romantic dinner under the stars, a surprise birthday celebration, or any special request, our concierge service is here to assist you in making your cruise even more memorable.
+        <br>
+        <strong>What languages are spoken by the crew on board?</strong>  Our crew is multilingual, and they can communicate fluently in English, Spanish, French, and several other languages. We aim to ensure that all guests feel comfortable and can easily communicate their preferences and needs during the cruise.
+        <br>
+        <strong>How do you handle environmental sustainability?</strong> "Go with the Flow" is committed to environmentally responsible practices. Our yachts are equipped with advanced waste treatment systems, and we take measures to reduce our carbon footprint. We also participate in various conservation initiatives and support marine protection efforts in the regions we visit.
       </div>
     </div>
   </div>
@@ -219,29 +224,40 @@ font-family: 'Source Sans 3', sans-serif;-->
     </h2>
     <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
       <div class="accordion-body">
-        <strong>Safety and Staff:</strong> We have numerous safety features and measures in place for emergencies. We have multiple trained paramedic and staff members on board.
+        <strong>What sets "Go with the Flow" apart from other luxury yacht cruise companies?:</strong> At "Go with the Flow," we stand out by offering meticulously tailored experiences, an exclusive selection of vessels, and an unwavering commitment to impeccable service. Our attention to detail and dedication to creating unforgettable moments make us your top choice for luxury yacht cruises.
+          <br>
+        <strong>Are there any age restrictions for passengers?</strong>While we welcome guests of all ages, certain cruises may have age restrictions or recommendations. Please check the specific cruise details or contact our team for information on age requirements for your chosen itinerary.
+        <br>
+        <strong>Can I bring my pet on board?</strong>Unfortunately, for the comfort and safety of all passengers, pets are not allowed on our cruises. However, we can recommend pet-friendly accommodations near our departure points if needed.
+        <br>
+        <strong> Is Wi-Fi available on board?</strong> Yes, we provide complimentary Wi-Fi access on all our cruises, allowing you to stay connected while you enjoy your cruise.
       </div>
     </div>
   </div>
 </div>
 <br/>
-      <footer>
-        <i>For more info contact us.</i>
-        <br/> 0126489200 / Vacation Cruises
-        
-        <div class="row">
-            <div class="col-4" ><div class="round-image-a"></div>
-            </div>
-            <div class="col-4" > <div class="round-image-b"></div>
-            </div>          
-            <div class="col-4" ><div class="round-image-c"></div>
-            </div>
-            <div class="col-4" ><div class="round-image-d"></div>
-            </div>
-            <div class="col-4" ><div class="round-image-e"></div>
-            </div>
-           
-        </div>
-    </footer>
-</body>
+<!--End ofAccordian thing -->
+
+    <!-- footer  -->
+    <div class="footer">
+      <i>Go with the Flow.</i>
+      <img src="assests/smallerlogo.png" alt="" height="70">
+      <p>©2023</p>
+    </div>
+    <div class="footer-center">
+      <a href="https://www.youtube.com/account"><img src="assests/icons/youtube_icon.svg" alt="Youtube Icon"></a>
+  <a href="https://twitter.com/login?lang=en"><img src="assests/icons/twitter_icon.svg" alt="Twitter Icon"></a>
+  <a href="https://www.instagram.com/accounts/login/"><img src="assests/icons/instagram_icon.svg" alt="Instagram Icon"></a>
+  <a href="https://www.facebook.com/login/"><img src="assests/icons/facebook_icon.svg" alt="Facebook Icon"></a>
+    </div>
+    <!-- end footer -->
+    
+
+    
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+  </body>
 </html>
